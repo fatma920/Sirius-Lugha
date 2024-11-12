@@ -1,0 +1,34 @@
+/* src/components/LevelCards.css */
+
+.header-section {
+  text-align: center; /* Center header text */
+  margin-bottom: 2rem; /* Spacing below the header */
+  background: linear-gradient(90deg, #1E3A8A, #2563EB); /* Blue gradient for header */
+  padding: 20px; /* Add padding for better spacing */
+  color: #FFFFFF; /* White text color */
+  border-radius: 10px; /* Optional: Add border-radius for a rounded effect */
+}
+
+.level-card {
+  border: none; /* No border for a clean look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  background: linear-gradient(135deg, #3B82F6, #60A5FA); /* Blue gradient background */
+}
+
+.level-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.level-card .card-body {
+  text-align: center; /* Center text in card body */
+  color: #FFFFFF; /* White text color for contrast */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.level-card .card-body p {
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  font-weight: bold; /* Make text bold for emphasis */
+}

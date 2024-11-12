@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A0A0A; /* Dark background */
+    color: #EDE7F6; /* Light text color */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height */
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px; /* Increased space below title */
+    font-size: 2rem; /* Larger title font */
+    color: #EDE7F6;
+}
+
+.chat-display {
+    width: 100%;
+    max-width: 700px;
+    max-height: 800px; /* Increased height for better readability */
+    overflow-y: auto;
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    padding: 25px; /* Larger padding for better readability */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Slightly deeper shadow */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space below chat display */
+}
+
+.chat-bubble {
+    padding: 15px 20px;
+    margin: 15px 0; /* Increased margin between bubbles */
+    border-radius: 20px; /* Softer rounded corners */
+    max-width: 75%;
+    display: inline-block;
+    position: relative;
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    line-height: 1.4; /* Improved line spacing */
+}
+
+.Speaker {
+    background-color: #8A2BE2;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    color: #FFFFFF;
+}
+
+.Reader {
+    background-color: #6A1B9A;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+    color: #FFFFFF;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #B3A1D9; /* Softer timestamp color */
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+
+.clear-chat-button,
+.send-button,
+.btn-listen {
+    background-color: #702963;
+    color: #EDE7F6;
+    padding: 12px 20px; /* Larger padding */
+    font-size: 1rem; /* Slightly larger text */
+    border: none;
+    border-radius: 10px; /* Larger rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-chat-button:hover,
+.send-button:hover,
+.btn-listen:hover {
+    background-color: #301934;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 15px; /* Space above input */
+}
+
+.input-box {
+    flex-grow: 1;
+    padding: 14px;
+    border: 1px solid #EDE7F6;
+    border-radius: 10px;
+    background-color: #2B2B42;
+    color: #EDE7F6;
+    font-size: 1rem; /* Larger text */
+}
+
+.input-box::placeholder {
+    color: #B39DDB;
+    opacity: 0.8;
+}
+
+/* Icon styling for buttons */
+.send-button i,
+.btn-listen i {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .chat-display, .input-container {
+        max-width: 100%; /* Full width on small screens */
+    }
+    h1 {
+        font-size: 1.5rem; /* Adjusted title size for smaller screens */
+    }
+    .clear-chat-button,
+    .send-button,
+    .btn-listen {
+        font-size: 0.9rem; /* Adjust button text size */
+    }
+    .chat-bubble {
+        font-size: 1rem; /* Slightly smaller font on small screens */
+    }
+}

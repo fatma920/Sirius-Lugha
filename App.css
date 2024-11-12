@@ -1,0 +1,102 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1E3A8A, #2563EB); /* Dark blue to light blue gradient */
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
+}
+
+nav button {
+  background: #FFFFFF; /* White button background */
+  border: none;
+  color: #1E3A8A; /* Dark blue text color */
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 12px;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 30px; /* Rounded pill shape */
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+nav button:hover {
+  background: #1E40AF; /* Dark blue on hover */
+  color: #FFFFFF; /* White text */
+  transform: translateY(-4px); /* Lift up slightly */
+  box-shadow: 0 8px 16px rgba(30, 64, 175, 0.5); /* Stronger shadow on hover */
+}
+
+nav button:focus {
+  outline: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional active button styling for current section */
+nav button.active {
+  background: #2563EB; /* Light blue for active section */
+  color: #FFFFFF; /* White text */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px; /* More padding for spacious feel */
+  min-height: 100vh; /* Full viewport height */
+  background-color: #FFFFFF; /* White background */
+  color: #1E3A8A; /* Dark blue text color */
+  font-size: 2rem; /* Larger font size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 10px; /* Slight rounding for modern look */
+}
+
+/* Other Sections */
+section {
+  min-height: 500px; /* More height to balance layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  font-size: 2rem;
+  background-color: #FFFFFF; /* White background for sections */
+  color: #1E3A8A; /* Dark blue text color */
+}
+
+/* Body styling */
+body {
+  padding-top: 80px; /* Offset for fixed navbar */
+  background-color: #F8FAFC; /* Light blue-grey background */
+  color: #1E3A8A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #home, section {
+    padding: 60px 10px;
+    font-size: 1.5rem; /* Smaller font size for small screens */
+  }
+  nav button {
+    font-size: 16px; /* Slightly smaller buttons for mobile */
+    padding: 10px 20px;
+  }
+}

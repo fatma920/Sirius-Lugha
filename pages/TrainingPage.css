@@ -1,0 +1,86 @@
+/* src/styles/TrainingPage.css */
+
+.training-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-title {
+    font-size: 24px; /* Title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #343a40; /* Dark color */
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    max-width: 300px; /* Max width for the input */
+  }
+  
+  .option-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .option-item {
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #e2e6ea; /* Light grey */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .option-item:hover {
+    background-color: #ced4da; /* Darker grey on hover */
+  }
+  
+  .option-item.correct {
+    background-color: #28a745; /* Green for correct */
+    color: white; /* White text color */
+  }
+  
+  .option-item.incorrect {
+    background-color: #dc3545; /* Red for incorrect */
+    color: white; /* White text color */
+  }
+  
+  .feedback {
+    margin-top: 10px; /* Space above feedback */
+  }
+  
+  .correct-feedback {
+    color: #28a745; /* Green color for correct feedback */
+  }
+  
+  .incorrect-feedback {
+    color: #dc3545; /* Red color for incorrect feedback */
+  }
+  
+  .back-buttons {
+    margin-top: 20px; /* Space above the buttons */
+  }
+  
+  .back-buttons button {
+    padding: 10px 20px; /* Button padding */
+    margin: 0 10px; /* Horizontal spacing between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .back-buttons button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

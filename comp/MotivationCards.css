@@ -1,0 +1,85 @@
+/* src/components/MotivationCards.css */
+
+.header-section {
+  background: #1E3A8A;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+  font-size: 2.5rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Change this to any desired font */
+  color: #fefefe;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 30px; /* Add margin to the top to move it down */
+}
+
+
+.header-subtitle {
+  font-size: 1.2rem;
+  color: #fffefe;
+  margin-top: 10px;
+}
+
+/* Motivation Card Styles */
+.motivation-card {
+  border-radius: 15px;
+  padding: 20px; /* Adjust padding if needed */
+  min-height: 350px; /* Adjusted for more height */
+  max-height: 600px; /* Set a maximum height */
+  background-size: cover; /* Ensure the background image covers the card */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.motivation-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent; /* Keep the background transparent */
+  z-index: 1;
+}
+
+.motivation-card h5,
+.motivation-card p {
+  position: relative;
+  z-index: 2; /* Bring text above overlay */
+  color: white; /* Change text color to white */
+}
+
+.motivation-card h5 {
+  font-size: 2rem; /* Increased font size */
+  font-weight: 600;
+}
+
+.motivation-card p {
+  font-size: 1.5rem; /* Increased font size */
+  color: white; /* Ensure paragraph text is also white */
+}
+.header-section {
+  background: #1E3A8A;
+  padding: 40px 20px 20px; /* Increased top padding */
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
